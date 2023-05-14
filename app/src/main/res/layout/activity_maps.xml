@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <TextView
+        android:id="@+id/txtcoordenadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:text="Coordinates: "></TextView>
+
+    <TextView
+        android:id="@+id/txtdistancia"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/txtcoordenadas"
+        android:text="Distância: "></TextView>
+
+    <TextView
+        android:id="@+id/txtmorada"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/txtdistancia"
+        android:text="Morada: "></TextView>
+
+</RelativeLayout>
